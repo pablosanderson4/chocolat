@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate MAFP</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff7f0;
+            color: #4a2c2a;
+        }
+
+        header {
+            background: #3e1f14;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background: #fff3e6;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background: #3e1f14;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chocolate MAFP</h1>
+    <p>Chocolates artesanales inspirados en Máximo, Ángela, Francisca y Pablo</p>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#origen">Origen del Chocolate</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio">
+    <h2>Bienvenido a Chocolate MAFP</h2>
+    <img class="hero-img" 
+    src="https://images.unsplash.com/photo-1611637576109-b6e3a287a776"
+    alt="Chocolates artesanales">
+
+    <p>
+        En <strong>Chocolate MAFP</strong> elaboramos chocolates artesanales con dedicación y pasión,
+        inspirados en la unión familiar de <strong>Máximo, Ángela, Francisca y Pablo</strong>.
+        Cada pieza refleja tradición, calidad y amor por el verdadero sabor del cacao.
+    </p>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos">
+    <h2>Nuestros Chocolates</h2>
+    <div class="productos-grid">
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1610450949065-1f2841536c88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hvY29sYXRlJTIwbmVncm98ZW58MHx8MHx8fDA%3D" alt="Chocolate negro artesanal">
+            <h3>Chocolate Negro 70%</h3>
+            <p>Intenso, puro y con notas frutales naturales del cacao.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://plus.unsplash.com/premium_photo-1683120880375-074c4ba3f775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hvY29sYXRlJTIwY29uJTIwbGVjaGV8ZW58MHx8MHx8fDA%3D" alt="Chocolate con leche artesanal">
+            <h3>Chocolate con Leche</h3>
+            <p>Cremoso, dulce y perfecto para cualquier ocasión.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwYmxhbmNvfGVufDB8fDB8fHww" alt="Chocolate blanco artesanal">
+            <h3>Chocolate Blanco</h3>
+            <p>Delicado y suave, elaborado con manteca de cacao natural.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1582493255270-b3844e2a63c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJ1ZmFzJTIwZGUlMjBjaG9jb2xhdGV8ZW58MHx8MHx8fDA%3D" alt="Trufas de chocolate">
+            <h3>Trufas Artesanales</h3>
+            <p>Rellenas de ganache suave y cubiertas con cacao en polvo.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9" alt="Chocolate con frutos secos">
+            <h3>Chocolate con Nueces</h3>
+            <p>Crujiente combinación de cacao y frutos secos tostados.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ORIGEN -->
+<section id="origen">
+    <h2>Historia del Chocolate</h2>
+    <p>
+        El chocolate tiene un origen milenario. Las primeras civilizaciones que lo utilizaron fueron 
+        los <strong>olmecas, mayas y aztecas</strong>, quienes lo valoraban como un alimento sagrado.
+    </p>
+
+    <p>
+        Con la llegada del cacao a Europa, su preparación se transformó y se convirtió en el producto dulce
+        y delicioso que conocemos en la actualidad.
+    </p>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios">
+    <h2>Beneficios del Chocolate</h2>
+    <p>El chocolate puro tiene grandes beneficios:</p>
+    <ul>
+        <li>Ayuda a mejorar el estado de ánimo.</li>
+        <li>Es rico en antioxidantes.</li>
+        <li>Aporta energía natural.</li>
+        <li>Reduce el estrés.</li>
+        <li>Mejora la concentración.</li>
+    </ul>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres hacer un pedido o tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+
+    <p><strong>📞 Teléfono:</strong> </p>
+    <p><strong>📧 Correo:</strong> </p>
+    <p><strong>📍 Dirección:</strong></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Chocolate MAFP. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
